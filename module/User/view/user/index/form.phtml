@@ -1,0 +1,61 @@
+<?php
+$form = $this->form;
+$fieldset = $form->get('user');
+
+$name = $fieldset->get('name');
+$name->setAttribute('class', 'form-control');
+$name->setAttribute('placeholder', 'Name');
+
+$email = $fieldset->get('email');
+$email->setAttribute('class', 'form-control');
+$email->setAttribute('placeholder', 'Email');
+
+$password = $fieldset->get('password');
+$password->setAttribute('class', 'form-control');
+$password->setAttribute('placeholder', 'Password');
+
+$select = $fieldset->get('admin_user');
+$select->setAttribute('class', 'form-control');
+
+$submit = $form->get('submit');
+$submit->setValue($this->submitLabel);
+$submit->setAttribute('class', 'btn btn-primary');
+
+$form->prepare();
+echo $this->form()->openTag($form);
+?>
+
+<fieldset>
+<div class="form-group">
+    <?= $this->formLabel($name) ?>
+    <?= $this->formElement($name) ?>
+    <?= $this->formElementErrors()->render($name, ['class' => 'help-block']) ?>
+</div>
+
+<div class="form-group">
+    <?= $this->formLabel($email) ?>
+    <?= $this->formElement($email) ?>
+    <?= $this->formElementErrors()->render($email, ['class' => 'help-block']) ?>
+</div>
+
+<div class="form-group">
+    <?= $this->formLabel($password) ?>
+    <?= $this->formElement($password) ?>
+    <?= $this->formElementErrors()->render($password, ['class' => 'help-block']) ?>
+</div>
+
+<div class="form-group">
+    <?= $this->formLabel($select) ?>
+    <?= $this->formElement($select) ?>
+    <?= $this->formElementErrors()->render($select, ['class' => 'help-block']) ?>
+</div>
+
+</fieldset>
+<div class="btn-group" role="group" aria-label="user actions">
+      <a class="btn btn-xs btn-default" href="<?= $this->url('user') ?>">Back</a>
+    </div>
+<?php
+echo $this->formSubmit($submit);
+
+echo $this->formHidden($fieldset->get('id'));
+echo $this->form()->closeTag();

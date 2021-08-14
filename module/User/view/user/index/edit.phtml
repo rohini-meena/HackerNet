@@ -1,0 +1,9 @@
+<h1>Edit</h1>
+
+<?php
+$form = $this->form;
+$form->setAttribute('action', $this->url('user/edit', [], true));
+echo $this->partial('user/index/form', [
+    'form' => $form,
+    'submitLabel' => 'Update',
+]);
