@@ -12,7 +12,7 @@ git clone https://github.com/rohini-meena/WhiteRabbit.git
 
 ## DB
 
-Execute the following file
+Execute the following file in the root folder
 
 ``` 
 wr_modules.sql
