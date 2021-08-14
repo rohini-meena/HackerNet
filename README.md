@@ -8,6 +8,9 @@ Do the following steps to get this project
 
 ``` php
 git clone https://github.com/rohini-meena/WhiteRabbit.git
+
+git checkout master 
+
 ```
 
 ## DB
