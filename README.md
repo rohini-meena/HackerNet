@@ -17,3 +17,10 @@ Execute the following file
 ``` 
 wr_modules.sql
 ```
+
+Once you done the database import, you can use following test account to login.
+
+``` php
+username: roh1@yopmail.com
+password: 12345 
+```
