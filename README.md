@@ -1,13 +1,13 @@
-# WhiteRabbit
+# First Sample Module
 
-**Coding Test | White Rabbit Group Inc.!**
+**Coding Test | .!**
 
 ## Instructions
 
 Do the following steps to get this project
 
 ``` php
-git clone https://github.com/rohini-meena/WhiteRabbit.git
+git clone https://github.com/rohini-meena/Sample-CRED.git
 
 git checkout master 
 
